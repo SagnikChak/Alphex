@@ -80,11 +80,11 @@ const handleSubmit = async (e) => {
   loader(messageDiv);
 
   // Fetch data from the server -> bot's response
-  const response = await fetch("http://localhost:5000", {
+  const response = await fetch("https://alphex.onrender.com", {
     method: "POST",
     mode: "cors",
     headers: {
-      "Access-Control-Allow-Origin": "http://localhost:5000",
+      "Access-Control-Allow-Origin": "https://alphex.onrender.com",
       "Access-Control-Allow-Credentials": "true",
       "Content-Type": "application/json",
     },
